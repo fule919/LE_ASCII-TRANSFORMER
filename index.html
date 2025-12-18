@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LE_ASCII TRANSFORMER</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@300;400;500;600&display=swap');
+      
+      body {
+        background-color: #050505;
+        background-image: radial-gradient(circle at 50% 0%, #1a1a1a 0%, #050505 70%);
+        color: #e4e4e7; /* zinc-200 */
+        font-family: 'Inter', sans-serif; /* Modern primary font */
+        min-height: 100vh;
+      }
+
+      /* Keep Space Mono for the ASCII art context */
+      .font-mono {
+        font-family: 'Space Mono', monospace;
+      }
+      
+      /* Smooth, minimal scrollbar */
+      ::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: rgba(255, 255, 255, 0.1); 
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: rgba(255, 255, 255, 0.2); 
+      }
+
+      /* Range slider styling */
+      input[type=range] {
+        -webkit-appearance: none;
+        background: transparent;
+      }
+      input[type=range]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        height: 16px;
+        width: 16px;
+        border-radius: 50%;
+        background: #ffffff;
+        cursor: pointer;
+        margin-top: -6px;
+        box-shadow: 0 0 10px rgba(255,255,255,0.3);
+      }
+      input[type=range]::-webkit-slider-runnable-track {
+        width: 100%;
+        height: 4px;
+        cursor: pointer;
+        background: rgba(255,255,255,0.1);
+        border-radius: 2px;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.33.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

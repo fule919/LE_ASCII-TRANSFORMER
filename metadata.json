@@ -1,0 +1,5 @@
+{
+  "name": "LE_ASCII TRANSFORMER",
+  "description": "A retro-styled image transformer that converts images into black and white ASCII halftone art. Features AI image generation.",
+  "requestFramePermissions": []
+}
